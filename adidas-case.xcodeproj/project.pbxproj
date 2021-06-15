@@ -15,6 +15,22 @@
 		EEF288AD2676998900513A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF288AB2676998900513A4D /* LaunchScreen.storyboard */; };
 		EEF288B82676998A00513A4D /* adidas_caseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288B72676998A00513A4D /* adidas_caseTests.swift */; };
 		EEF288C32676998A00513A4D /* adidas_caseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288C22676998A00513A4D /* adidas_caseUITests.swift */; };
+		EEF288D426769D4300513A4D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D326769D4300513A4D /* Product.swift */; };
+		EEF288D526769D4300513A4D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D326769D4300513A4D /* Product.swift */; };
+		EEF288D626769D4300513A4D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D326769D4300513A4D /* Product.swift */; };
+		EEF288D826769E3200513A4D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D726769E3200513A4D /* Review.swift */; };
+		EEF288D926769E3200513A4D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D726769E3200513A4D /* Review.swift */; };
+		EEF288DA26769E3200513A4D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D726769E3200513A4D /* Review.swift */; };
+		EEF288DD26769F5100513A4D /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288DC26769F5100513A4D /* ProductService.swift */; };
+		EEF288E02676A21100513A4D /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288DF2676A21100513A4D /* ProductListViewModel.swift */; };
+		EEF288E32676AFB200513A4D /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288E22676AFB200513A4D /* ProductTableViewCell.swift */; };
+		EEF288E62676B02E00513A4D /* NibProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288E52676B02E00513A4D /* NibProvidable.swift */; };
+		EEF288E82676B03C00513A4D /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288E72676B03C00513A4D /* ReusableView.swift */; };
+		EEF288EB2676B0BA00513A4D /* UITableVIew+ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288EA2676B0BA00513A4D /* UITableVIew+ReusableCell.swift */; };
+		EEF288ED2676B16900513A4D /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF288EC2676B16900513A4D /* ProductTableViewCell.xib */; };
+		EEF288EF2676B4A700513A4D /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288EE2676B4A700513A4D /* ImageLoaderService.swift */; };
+		EEF288F12676B50500513A4D /* ImageServiceLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288F02676B50500513A4D /* ImageServiceLoadable.swift */; };
+		EEF288F32676B54B00513A4D /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288F22676B54B00513A4D /* ProductViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +65,18 @@
 		EEF288BE2676998A00513A4D /* adidas-caseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "adidas-caseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF288C22676998A00513A4D /* adidas_caseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adidas_caseUITests.swift; sourceTree = "<group>"; };
 		EEF288C42676998A00513A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF288D326769D4300513A4D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		EEF288D726769E3200513A4D /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		EEF288DC26769F5100513A4D /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		EEF288DF2676A21100513A4D /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		EEF288E22676AFB200513A4D /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		EEF288E52676B02E00513A4D /* NibProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibProvidable.swift; sourceTree = "<group>"; };
+		EEF288E72676B03C00513A4D /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		EEF288EA2676B0BA00513A4D /* UITableVIew+ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableVIew+ReusableCell.swift"; sourceTree = "<group>"; };
+		EEF288EC2676B16900513A4D /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		EEF288EE2676B4A700513A4D /* ImageLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		EEF288F02676B50500513A4D /* ImageServiceLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceLoadable.swift; sourceTree = "<group>"; };
+		EEF288F22676B54B00513A4D /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +127,16 @@
 		EEF2889F2676998800513A4D /* adidas-case */ = {
 			isa = PBXGroup;
 			children = (
+				EEF288E92676B09E00513A4D /* Extensions */,
+				EEF288E42676B01E00513A4D /* Protocols */,
+				EEF288E12676AF9900513A4D /* Cells */,
+				EEF288D0267699B900513A4D /* ViewControllers */,
+				EEF288DE2676A1F600513A4D /* ViewModel */,
+				EEF288DB26769F3300513A4D /* service */,
+				EEF288D226769D2700513A4D /* model */,
+				EEF288D1267699D200513A4D /* resources */,
 				EEF288A02676998800513A4D /* AppDelegate.swift */,
 				EEF288A22676998800513A4D /* SceneDelegate.swift */,
-				EEF288A42676998800513A4D /* ViewController.swift */,
-				EEF288A62676998800513A4D /* Main.storyboard */,
-				EEF288A92676998900513A4D /* Assets.xcassets */,
-				EEF288AB2676998900513A4D /* LaunchScreen.storyboard */,
 				EEF288AE2676998900513A4D /* Info.plist */,
 			);
 			path = "adidas-case";
@@ -126,6 +158,78 @@
 				EEF288C42676998A00513A4D /* Info.plist */,
 			);
 			path = "adidas-caseUITests";
+			sourceTree = "<group>";
+		};
+		EEF288D0267699B900513A4D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEF288A42676998800513A4D /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EEF288D1267699D200513A4D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEF288A62676998800513A4D /* Main.storyboard */,
+				EEF288A92676998900513A4D /* Assets.xcassets */,
+				EEF288AB2676998900513A4D /* LaunchScreen.storyboard */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		EEF288D226769D2700513A4D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EEF288D326769D4300513A4D /* Product.swift */,
+				EEF288D726769E3200513A4D /* Review.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		EEF288DB26769F3300513A4D /* service */ = {
+			isa = PBXGroup;
+			children = (
+				EEF288DC26769F5100513A4D /* ProductService.swift */,
+				EEF288EE2676B4A700513A4D /* ImageLoaderService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		EEF288DE2676A1F600513A4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEF288DF2676A21100513A4D /* ProductListViewModel.swift */,
+				EEF288F22676B54B00513A4D /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEF288E12676AF9900513A4D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EEF288E22676AFB200513A4D /* ProductTableViewCell.swift */,
+				EEF288EC2676B16900513A4D /* ProductTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EEF288E42676B01E00513A4D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EEF288E52676B02E00513A4D /* NibProvidable.swift */,
+				EEF288E72676B03C00513A4D /* ReusableView.swift */,
+				EEF288F02676B50500513A4D /* ImageServiceLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EEF288E92676B09E00513A4D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EEF288EA2676B0BA00513A4D /* UITableVIew+ReusableCell.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF288ED2676B16900513A4D /* ProductTableViewCell.xib in Resources */,
 				EEF288AD2676998900513A4D /* LaunchScreen.storyboard in Resources */,
 				EEF288AA2676998900513A4D /* Assets.xcassets in Resources */,
 				EEF288A82676998800513A4D /* Main.storyboard in Resources */,
@@ -258,9 +363,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF288F32676B54B00513A4D /* ProductViewModel.swift in Sources */,
+				EEF288E02676A21100513A4D /* ProductListViewModel.swift in Sources */,
+				EEF288E82676B03C00513A4D /* ReusableView.swift in Sources */,
+				EEF288EB2676B0BA00513A4D /* UITableVIew+ReusableCell.swift in Sources */,
+				EEF288E32676AFB200513A4D /* ProductTableViewCell.swift in Sources */,
+				EEF288D826769E3200513A4D /* Review.swift in Sources */,
 				EEF288A52676998800513A4D /* ViewController.swift in Sources */,
+				EEF288EF2676B4A700513A4D /* ImageLoaderService.swift in Sources */,
+				EEF288E62676B02E00513A4D /* NibProvidable.swift in Sources */,
+				EEF288F12676B50500513A4D /* ImageServiceLoadable.swift in Sources */,
+				EEF288D426769D4300513A4D /* Product.swift in Sources */,
 				EEF288A12676998800513A4D /* AppDelegate.swift in Sources */,
 				EEF288A32676998800513A4D /* SceneDelegate.swift in Sources */,
+				EEF288DD26769F5100513A4D /* ProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +385,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF288B82676998A00513A4D /* adidas_caseTests.swift in Sources */,
+				EEF288D526769D4300513A4D /* Product.swift in Sources */,
+				EEF288D926769E3200513A4D /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +395,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF288C32676998A00513A4D /* adidas_caseUITests.swift in Sources */,
+				EEF288D626769D4300513A4D /* Product.swift in Sources */,
+				EEF288DA26769E3200513A4D /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
