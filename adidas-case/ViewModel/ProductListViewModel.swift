@@ -12,6 +12,8 @@ class ProductListViewModel {
     private var productService: ProductService
     private var imageLoaderService: ImageLoaderService
     
+    var navigator: ProductSearchNavigator?
+    
     var products = CurrentValueSubject<[Product], Never>([Product]())
     private var cancellables: [AnyCancellable] = []
 
@@ -26,9 +28,9 @@ class ProductListViewModel {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()
 
-//        input.selection
-//            .sink(receiveValue: { [unowned self] productId in self.navigator?.showDetails(forProduct: productId) })
-//            .store(in: &cancellables)
+        input.selection
+            .sink(receiveValue: { [unowned self] productId in self.navigator?.showProductDetails(forProduct: productId) })
+            .store(in: &cancellables)
 
         let searchInput = input.search
             .debounce(for: .milliseconds(300), scheduler: RunLoop.main)

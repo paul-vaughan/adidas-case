@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EEF288A12676998800513A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288A02676998800513A4D /* AppDelegate.swift */; };
 		EEF288A32676998800513A4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288A22676998800513A4D /* SceneDelegate.swift */; };
-		EEF288A52676998800513A4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288A42676998800513A4D /* ViewController.swift */; };
 		EEF288A82676998800513A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF288A62676998800513A4D /* Main.storyboard */; };
 		EEF288AA2676998900513A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF288A92676998900513A4D /* Assets.xcassets */; };
 		EEF288AD2676998900513A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF288AB2676998900513A4D /* LaunchScreen.storyboard */; };
@@ -31,6 +30,19 @@
 		EEF288EF2676B4A700513A4D /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288EE2676B4A700513A4D /* ImageLoaderService.swift */; };
 		EEF288F12676B50500513A4D /* ImageServiceLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288F02676B50500513A4D /* ImageServiceLoadable.swift */; };
 		EEF288F32676B54B00513A4D /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288F22676B54B00513A4D /* ProductViewModel.swift */; };
+		EEF288FB26794A9100513A4D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288FA26794A9100513A4D /* Coordinator.swift */; };
+		EEF288FE26794B1100513A4D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288FD26794B1100513A4D /* MainCoordinator.swift */; };
+		EEF28907267956A200513A4D /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28905267956A200513A4D /* ProductListViewController.swift */; };
+		EEF28908267956A200513A4D /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF28906267956A200513A4D /* ProductListViewController.xib */; };
+		EEF2890B267956BD00513A4D /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28909267956BD00513A4D /* ProductDetailsViewController.swift */; };
+		EEF2890C267956BD00513A4D /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF2890A267956BD00513A4D /* ProductDetailsViewController.xib */; };
+		EEF2890E26795C6000513A4D /* ProductSearchModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2890D26795C6000513A4D /* ProductSearchModelType.swift */; };
+		EEF2891026795DAE00513A4D /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2890F26795DAE00513A4D /* Navigator.swift */; };
+		EEF2891226795FD300513A4D /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2891126795FD300513A4D /* ProductDetailsViewModel.swift */; };
+		EEF289152679635C00513A4D /* ProductDetailsViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF289142679635C00513A4D /* ProductDetailsViewModelType.swift */; };
+		EEF28917267967EF00513A4D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28916267967EF00513A4D /* NetworkService.swift */; };
+		EEF289192679682700513A4D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF289182679682700513A4D /* Resource.swift */; };
+		EEF2891B2679686800513A4D /* NetworkServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2891A2679686800513A4D /* NetworkServiceType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +66,6 @@
 		EEF2889D2676998800513A4D /* adidas-case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adidas-case.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF288A02676998800513A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEF288A22676998800513A4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEF288A42676998800513A4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EEF288A72676998800513A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEF288A92676998900513A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEF288AC2676998900513A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +88,19 @@
 		EEF288EE2676B4A700513A4D /* ImageLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
 		EEF288F02676B50500513A4D /* ImageServiceLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceLoadable.swift; sourceTree = "<group>"; };
 		EEF288F22676B54B00513A4D /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		EEF288FA26794A9100513A4D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EEF288FD26794B1100513A4D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		EEF28905267956A200513A4D /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		EEF28906267956A200513A4D /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		EEF28909267956BD00513A4D /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		EEF2890A267956BD00513A4D /* ProductDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsViewController.xib; sourceTree = "<group>"; };
+		EEF2890D26795C6000513A4D /* ProductSearchModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSearchModelType.swift; sourceTree = "<group>"; };
+		EEF2890F26795DAE00513A4D /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		EEF2891126795FD300513A4D /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
+		EEF289142679635C00513A4D /* ProductDetailsViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModelType.swift; sourceTree = "<group>"; };
+		EEF28916267967EF00513A4D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EEF289182679682700513A4D /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		EEF2891A2679686800513A4D /* NetworkServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +151,8 @@
 		EEF2889F2676998800513A4D /* adidas-case */ = {
 			isa = PBXGroup;
 			children = (
+				EEF289132679634200513A4D /* ProductDetails */,
+				EEF288FC26794AEC00513A4D /* Coordinators */,
 				EEF288E92676B09E00513A4D /* Extensions */,
 				EEF288E42676B01E00513A4D /* Protocols */,
 				EEF288E12676AF9900513A4D /* Cells */,
@@ -163,7 +189,8 @@
 		EEF288D0267699B900513A4D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EEF288A42676998800513A4D /* ViewController.swift */,
+				EEF28905267956A200513A4D /* ProductListViewController.swift */,
+				EEF28906267956A200513A4D /* ProductListViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -183,6 +210,7 @@
 			children = (
 				EEF288D326769D4300513A4D /* Product.swift */,
 				EEF288D726769E3200513A4D /* Review.swift */,
+				EEF2890D26795C6000513A4D /* ProductSearchModelType.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -192,6 +220,9 @@
 			children = (
 				EEF288DC26769F5100513A4D /* ProductService.swift */,
 				EEF288EE2676B4A700513A4D /* ImageLoaderService.swift */,
+				EEF28916267967EF00513A4D /* NetworkService.swift */,
+				EEF289182679682700513A4D /* Resource.swift */,
+				EEF2891A2679686800513A4D /* NetworkServiceType.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -220,6 +251,8 @@
 				EEF288E52676B02E00513A4D /* NibProvidable.swift */,
 				EEF288E72676B03C00513A4D /* ReusableView.swift */,
 				EEF288F02676B50500513A4D /* ImageServiceLoadable.swift */,
+				EEF288FA26794A9100513A4D /* Coordinator.swift */,
+				EEF2890F26795DAE00513A4D /* Navigator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -230,6 +263,25 @@
 				EEF288EA2676B0BA00513A4D /* UITableVIew+ReusableCell.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EEF288FC26794AEC00513A4D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				EEF288FD26794B1100513A4D /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		EEF289132679634200513A4D /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				EEF289142679635C00513A4D /* ProductDetailsViewModelType.swift */,
+				EEF2891126795FD300513A4D /* ProductDetailsViewModel.swift */,
+				EEF28909267956BD00513A4D /* ProductDetailsViewController.swift */,
+				EEF2890A267956BD00513A4D /* ProductDetailsViewController.xib */,
+			);
+			path = ProductDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,7 +387,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF2890C267956BD00513A4D /* ProductDetailsViewController.xib in Resources */,
 				EEF288ED2676B16900513A4D /* ProductTableViewCell.xib in Resources */,
+				EEF28908267956A200513A4D /* ProductListViewController.xib in Resources */,
 				EEF288AD2676998900513A4D /* LaunchScreen.storyboard in Resources */,
 				EEF288AA2676998900513A4D /* Assets.xcassets in Resources */,
 				EEF288A82676998800513A4D /* Main.storyboard in Resources */,
@@ -363,20 +417,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF2891B2679686800513A4D /* NetworkServiceType.swift in Sources */,
+				EEF28917267967EF00513A4D /* NetworkService.swift in Sources */,
 				EEF288F32676B54B00513A4D /* ProductViewModel.swift in Sources */,
+				EEF2890E26795C6000513A4D /* ProductSearchModelType.swift in Sources */,
+				EEF2891026795DAE00513A4D /* Navigator.swift in Sources */,
 				EEF288E02676A21100513A4D /* ProductListViewModel.swift in Sources */,
 				EEF288E82676B03C00513A4D /* ReusableView.swift in Sources */,
 				EEF288EB2676B0BA00513A4D /* UITableVIew+ReusableCell.swift in Sources */,
 				EEF288E32676AFB200513A4D /* ProductTableViewCell.swift in Sources */,
+				EEF289192679682700513A4D /* Resource.swift in Sources */,
+				EEF289152679635C00513A4D /* ProductDetailsViewModelType.swift in Sources */,
+				EEF2890B267956BD00513A4D /* ProductDetailsViewController.swift in Sources */,
 				EEF288D826769E3200513A4D /* Review.swift in Sources */,
-				EEF288A52676998800513A4D /* ViewController.swift in Sources */,
 				EEF288EF2676B4A700513A4D /* ImageLoaderService.swift in Sources */,
 				EEF288E62676B02E00513A4D /* NibProvidable.swift in Sources */,
+				EEF2891226795FD300513A4D /* ProductDetailsViewModel.swift in Sources */,
+				EEF288FB26794A9100513A4D /* Coordinator.swift in Sources */,
 				EEF288F12676B50500513A4D /* ImageServiceLoadable.swift in Sources */,
 				EEF288D426769D4300513A4D /* Product.swift in Sources */,
 				EEF288A12676998800513A4D /* AppDelegate.swift in Sources */,
+				EEF28907267956A200513A4D /* ProductListViewController.swift in Sources */,
 				EEF288A32676998800513A4D /* SceneDelegate.swift in Sources */,
 				EEF288DD26769F5100513A4D /* ProductService.swift in Sources */,
+				EEF288FE26794B1100513A4D /* MainCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

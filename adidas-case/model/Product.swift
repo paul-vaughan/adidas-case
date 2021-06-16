@@ -9,7 +9,6 @@ import Foundation
 
 struct Product: Codable {
     let uuid = UUID()
-
     var id: String
     var name: String
     var description: String
