@@ -36,4 +36,10 @@ extension Resource {
         let parameters: [String : CustomStringConvertible] =  [String : CustomStringConvertible]()
         return Resource<Product>(url: productDetailUrl, parameters: parameters)
     }
+    
+    static func productList() -> Resource<[Product]> {
+        let productDetailUrl = URL(string: "http://localhost:3001/product")!
+        let parameters: [String : CustomStringConvertible] =  [String : CustomStringConvertible]()
+        return Resource<[Product]>(url: productDetailUrl, parameters: parameters)
+    }
 }

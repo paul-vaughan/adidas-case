@@ -21,14 +21,8 @@ class MainCoordinator: Coordinator {
         let vm = ProductListViewModel()
         vm.navigator = self
         let vc = ProductListViewController(with: vm)
-        
         navigationController.pushViewController(vc, animated: false)
     }
-    
-    func showProductDetails(productId: String) {
-        
-    }
-    
 }
 
 

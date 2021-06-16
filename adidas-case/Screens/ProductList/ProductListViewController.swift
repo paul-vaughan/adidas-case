@@ -16,8 +16,11 @@ final class ProductListViewController: UIViewController {
     private let selection = PassthroughSubject<String, Never>()
     private let search = PassthroughSubject<String, Never>()
     private let appear = PassthroughSubject<Void, Never>()
+    private lazy var alertViewController = AlertViewController(nibName: nil, bundle: nil)
 
     @IBOutlet private weak var tableView: UITableView!
+    
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
     
     init( with productListViewModel: ProductListViewModel){
         viewModel = productListViewModel
@@ -45,6 +48,8 @@ final class ProductListViewController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.registerNib(cellClass: ProductTableViewCell.self)
         tableView.dataSource = dataSource
+        add(alertViewController)
+        alertViewController.view.isHidden = true
     }
 
     private func bind(to viewModel: ProductListViewModel) {
@@ -66,14 +71,30 @@ final class ProductListViewController: UIViewController {
         case .idle:
             update(with: [], animate: true)
         case .loading:
+            loadingView.isHidden = false
             update(with: [], animate: true)
         case .noResults:
+            showError(state)
             update(with: [], animate: true)
         case .failure:
+            showError(state)
             update(with: [], animate: true)
         case .success(let products):
+            loadingView.isHidden = true
+            alertViewController.view.isHidden = true
             update(with: products, animate: false)
         }
+    }
+    
+    private func showError(_ state: ProductSearchState){
+        alertViewController.view.isHidden = false
+        switch state {
+        case .noResults:
+            alertViewController.showNoResults()
+        default:
+            alertViewController.showDataLoadingError()
+        }
+        loadingView.isHidden = true
     }
 }
 
