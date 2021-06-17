@@ -13,7 +13,6 @@ protocol NibProvidable {
     static var nib: UINib { get }
 }
 
-
 extension NibProvidable {
     static var nibName: String {
         return "\(self)"

@@ -41,5 +41,4 @@ class ProductDetailsViewModel {
     private func viewModel(from product: Product) -> ProductViewModel {
         return ProductViewModelBuilder.viewModel(from: product, imageLoader: {[unowned self] product in self.imageLoaderService.loadImage(for: product) })
     }
-    
 }

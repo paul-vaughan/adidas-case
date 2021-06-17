@@ -23,7 +23,6 @@ class ProductListViewModel {
         self.imageLoaderService = imageLoaderService
     }
     
-    
     func transform(input: ProductSearchViewModelInput) -> ProductSearchViewModelOutput {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()

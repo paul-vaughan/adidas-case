@@ -88,9 +88,6 @@ class ReviewsViewController: UIViewController {
                               rating: Int(review.rank),
                               text: review.comment))
     }
-
- 
-
 }
 
 fileprivate extension ReviewsViewController {

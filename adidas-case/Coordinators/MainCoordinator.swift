@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 class MainCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
@@ -24,7 +23,6 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
 }
-
 
 extension MainCoordinator: ProductSearchNavigator {
     func showProductDetails(forProduct productId: String) {

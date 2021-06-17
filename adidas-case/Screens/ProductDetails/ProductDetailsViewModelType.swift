@@ -8,13 +8,10 @@
 import UIKit
 import Combine
 
-// INPUT
 struct ProductDetailsViewModelInput {
-    /// called when a screen becomes visible
     let appear: AnyPublisher<Void, Never>
 }
 
-// OUTPUT
 enum ProductDetailsState {
     case loading
     case success(ProductViewModel)

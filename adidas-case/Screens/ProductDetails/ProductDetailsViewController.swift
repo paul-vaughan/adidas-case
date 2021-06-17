@@ -13,6 +13,7 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var productDescription: UILabel!
     @IBOutlet weak var productImage: UIImageView!
+    @IBOutlet weak var ratingview: UIView!
     
     var viewModel: ProductDetailsViewModel
     private var cancellables: [AnyCancellable] = []
@@ -38,9 +39,6 @@ class ProductDetailsViewController: UIViewController {
         appear.send(())
     }
 
-   
-
-
     private func bind(to viewModel: ProductDetailsViewModel) {
         let input = ProductDetailsViewModelInput(appear: appear.eraseToAnyPublisher())
         
@@ -54,18 +52,11 @@ class ProductDetailsViewController: UIViewController {
     private func render(_ state: ProductDetailsState) {
         switch state {
         case .loading:
-            //self.contentView.isHidden = true
-            //self.loadingIndicator.isHidden = false
             productName.isHidden = true
         case .failure:
-            //self.contentView.isHidden = true
-            //self.loadingIndicator.isHidden = true
             productName.isHidden = true
         case .success(let prductDetails):
-            //self.contentView.isHidden = false
-            //self.loadingIndicator.isHidden = true
             productName.isHidden = false
-
             show(prductDetails)
         }
     }
@@ -79,29 +70,13 @@ class ProductDetailsViewController: UIViewController {
             .store(in: &cancellables)
     }
     
-    
-    @IBOutlet weak var ratingview: UIView!
     private func addReviews() {
-        // Create a child view controller and add it to the current view controller.
         let viewModel = ProductReviewsViewModel(productId: viewModel.productId)
         let viewController = ReviewsViewController(with: viewModel)
-        
-        
-        // Add the view controller to the container.
         addChild(viewController)
         ratingview.addSubview(viewController.view)
-
-        
-        // Create and activate the constraints for the child’s view.
-//        onscreenConstraints = configureConstraintsForContainedView(containedView: viewController.view,
-//                                                                   stage: .onscreen)
-//        NSLayoutConstraint.activate(onscreenConstraints)
-        
-        // Notify the child view controller that the move is complete.
         viewController.didMove(toParent: self)
     }
-
-
 }
 
 extension UIViewController {

@@ -17,7 +17,6 @@ class AddReviewViewModel: ObservableObject {
     }
 }
 
-
 struct AddReviewView: View {
     var dismissAction: (() -> Void)
     @EnvironmentObject var review: AddReviewViewModel
@@ -54,7 +53,6 @@ struct AddReviewView: View {
             }
             Spacer()
         }.padding(25.0)
-       
     }
 }
 

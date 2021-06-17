@@ -32,12 +32,7 @@ final class ImageLoaderService: ImageServiceLoadable {
     }
 }
 
-
-import Foundation
-import Combine
-
 final class Scheduler {
-
     static var backgroundWorkScheduler: OperationQueue = {
         let operationQueue = OperationQueue()
         operationQueue.maxConcurrentOperationCount = 5
@@ -46,12 +41,9 @@ final class Scheduler {
     }()
 
     static let mainScheduler = RunLoop.main
-
 }
 
-
 extension Publisher {
-
 //    The flatMapLatest operator behaves much like the standard FlatMap operator, except that whenever
 //    a new item is emitted by the source Publisher, it will unsubscribe to and stop mirroring the Publisher
 //    that was generated from the previously-emitted item, and begin only mirroring the current one.
@@ -59,7 +51,6 @@ extension Publisher {
         map(transform).switchToLatest()
     }
 }
-
 
 extension Publisher {
 
