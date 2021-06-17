@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class ReviewService {
+class ReviewService: ReviewServiceType {
     var networkService: NetworkServiceType
     
     init( networkService: NetworkServiceType = NetworkService() ){

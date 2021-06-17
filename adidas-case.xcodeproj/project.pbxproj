@@ -18,6 +18,8 @@
 		EE10FEAC267A44B900F3AFC4 /* UIViewController+AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10FEAB267A44B900F3AFC4 /* UIViewController+AddChild.swift */; };
 		EE3416C8267A2119006E2FBE /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3416C7267A2119006E2FBE /* AlertViewModel.swift */; };
 		EE4F4BC8267A25A600595763 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4F4BC6267A25A600595763 /* AlertViewController.swift */; };
+		EE59D603267B3ABF006495CA /* ReviewServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D602267B3ABF006495CA /* ReviewServiceType.swift */; };
+		EE59D606267B3B89006495CA /* ReviewServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D605267B3B89006495CA /* ReviewServiceMock.swift */; };
 		EEB06BD7267A4221002626D4 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB06BD6267A4221002626D4 /* AlertViewController.xib */; };
 		EEF288A12676998800513A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288A02676998800513A4D /* AppDelegate.swift */; };
 		EEF288A32676998800513A4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288A22676998800513A4D /* SceneDelegate.swift */; };
@@ -27,11 +29,7 @@
 		EEF288B82676998A00513A4D /* adidas_caseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288B72676998A00513A4D /* adidas_caseTests.swift */; };
 		EEF288C32676998A00513A4D /* adidas_caseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288C22676998A00513A4D /* adidas_caseUITests.swift */; };
 		EEF288D426769D4300513A4D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D326769D4300513A4D /* Product.swift */; };
-		EEF288D526769D4300513A4D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D326769D4300513A4D /* Product.swift */; };
-		EEF288D626769D4300513A4D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D326769D4300513A4D /* Product.swift */; };
 		EEF288D826769E3200513A4D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D726769E3200513A4D /* Review.swift */; };
-		EEF288D926769E3200513A4D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D726769E3200513A4D /* Review.swift */; };
-		EEF288DA26769E3200513A4D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288D726769E3200513A4D /* Review.swift */; };
 		EEF288DD26769F5100513A4D /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288DC26769F5100513A4D /* ProductService.swift */; };
 		EEF288E02676A21100513A4D /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288DF2676A21100513A4D /* ProductListViewModel.swift */; };
 		EEF288E32676AFB200513A4D /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF288E22676AFB200513A4D /* ProductTableViewCell.swift */; };
@@ -87,6 +85,8 @@
 		EE10FEAB267A44B900F3AFC4 /* UIViewController+AddChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddChild.swift"; sourceTree = "<group>"; };
 		EE3416C7267A2119006E2FBE /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 		EE4F4BC6267A25A600595763 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		EE59D602267B3ABF006495CA /* ReviewServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewServiceType.swift; sourceTree = "<group>"; };
+		EE59D605267B3B89006495CA /* ReviewServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewServiceMock.swift; sourceTree = "<group>"; };
 		EEB06BD6267A4221002626D4 /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
 		EEF2889D2676998800513A4D /* adidas-case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adidas-case.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF288A02676998800513A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +192,14 @@
 			path = Alert;
 			sourceTree = "<group>";
 		};
+		EE59D604267B3B73006495CA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EE59D605267B3B89006495CA /* ReviewServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		EEF288942676998800513A4D = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +241,7 @@
 		EEF288B62676998A00513A4D /* adidas-caseTests */ = {
 			isa = PBXGroup;
 			children = (
+				EE59D604267B3B73006495CA /* Mocks */,
 				EEF288B72676998A00513A4D /* adidas_caseTests.swift */,
 				EEF288B92676998A00513A4D /* Info.plist */,
 			);
@@ -276,6 +285,7 @@
 				EEF289182679682700513A4D /* Resource.swift */,
 				EEF2891A2679686800513A4D /* NetworkServiceType.swift */,
 				EE03A24B267A97FB00FBDE52 /* ReviewService.swift */,
+				EE59D602267B3ABF006495CA /* ReviewServiceType.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -529,6 +539,7 @@
 				EE03A253267A9F7400FBDE52 /* ReviewsViewController.swift in Sources */,
 				EE4F4BC8267A25A600595763 /* AlertViewController.swift in Sources */,
 				EE03A258267AA37800FBDE52 /* ReviewTableViewCell.swift in Sources */,
+				EE59D603267B3ABF006495CA /* ReviewServiceType.swift in Sources */,
 				EEF28907267956A200513A4D /* ProductListViewController.swift in Sources */,
 				EEF288A32676998800513A4D /* SceneDelegate.swift in Sources */,
 				EEF288DD26769F5100513A4D /* ProductService.swift in Sources */,
@@ -541,8 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF288B82676998A00513A4D /* adidas_caseTests.swift in Sources */,
-				EEF288D526769D4300513A4D /* Product.swift in Sources */,
-				EEF288D926769E3200513A4D /* Review.swift in Sources */,
+				EE59D606267B3B89006495CA /* ReviewServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,8 +561,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF288C32676998A00513A4D /* adidas_caseUITests.swift in Sources */,
-				EEF288D626769D4300513A4D /* Product.swift in Sources */,
-				EEF288DA26769E3200513A4D /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

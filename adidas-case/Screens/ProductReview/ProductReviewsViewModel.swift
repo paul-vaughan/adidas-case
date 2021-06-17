@@ -9,13 +9,13 @@ import Foundation
 import Combine
 
 class ProductReviewsViewModel {
-    private var reviewService: ReviewService
+    private var reviewService: ReviewServiceType
     
     var reviews = CurrentValueSubject<[Review], Never>([Review]())
     private var cancellables: [AnyCancellable] = []
     var productId: String
     
-    init (productId: String, service: ReviewService = ReviewService()) {
+    init (productId: String, service: ReviewServiceType = ReviewService()) {
         self.productId = productId
         self.reviewService = service
     }
