@@ -33,5 +33,10 @@ extension MainCoordinator: ProductSearchNavigator {
         navigationController.pushViewController(vc, animated: false)
     }
     
+    func showProductReviews(forProduct productId: String) {
+        let vm = ProductReviewsViewModel(productId: productId)
+        let vc = ReviewsViewController(with: vm)
+        navigationController.pushViewController(vc, animated: false)
+    }
     
 }

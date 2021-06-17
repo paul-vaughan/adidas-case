@@ -37,7 +37,6 @@ class ProductListViewModel {
             .removeDuplicates()
         
         let products = input.appear
-            //.filter({ !$0.isEmpty })
             .flatMapLatest({ [unowned self] in self.productService.searchProducts(with: "") })
             .map({ result -> ProductSearchState in
                 switch result {

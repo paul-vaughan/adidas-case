@@ -10,4 +10,5 @@ import Foundation
 protocol ProductSearchNavigator: AnyObject {
     /// Presents the product details screen
     func showProductDetails(forProduct productId: String)
+    func showProductReviews(forProduct productId: String)
 }

@@ -14,7 +14,7 @@ class ProductDetailsViewModel {
     private var navigator: ProductSearchNavigator?
     
     private var cancellables: [AnyCancellable] = []
-    private var productId: String
+    var productId: String
 
     
     init (_ productId: String, service: ProductService = ProductService(), imageLoaderService: ImageLoaderService = ImageLoaderService()) {

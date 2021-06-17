@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreGraphics
 import Combine
 
 final class ProductListViewController: UIViewController {
@@ -44,12 +45,12 @@ final class ProductListViewController: UIViewController {
     
     private func configureUI() {
         definesPresentationContext = true
-        title = NSLocalizedString("Producs", comment: "new products")
-        tableView.tableFooterView = UIView()
+        //tableView.tableFooterView = UIView()
         tableView.registerNib(cellClass: ProductTableViewCell.self)
         tableView.dataSource = dataSource
         add(alertViewController)
         alertViewController.view.isHidden = true
+        setAdidasNavBar()
     }
 
     private func bind(to viewModel: ProductListViewModel) {

@@ -14,14 +14,9 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var productDescription: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     
-    
-    
-    
     var viewModel: ProductDetailsViewModel
     private var cancellables: [AnyCancellable] = []
     private let appear = PassthroughSubject<Void, Never>()
-    
- 
     
     init( with producViewModel: ProductDetailsViewModel){
         viewModel = producViewModel
@@ -39,9 +34,11 @@ class ProductDetailsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        addReviews()
         appear.send(())
     }
 
+   
 
 
     private func bind(to viewModel: ProductDetailsViewModel) {
@@ -81,5 +78,41 @@ class ProductDetailsViewController: UIViewController {
             .assign(to: \UIImageView.image, on: self.productImage)
             .store(in: &cancellables)
     }
+    
+    
+    @IBOutlet weak var ratingview: UIView!
+    private func addReviews() {
+        // Create a child view controller and add it to the current view controller.
+        let viewModel = ProductReviewsViewModel(productId: viewModel.productId)
+        let viewController = ReviewsViewController(with: viewModel)
+        
+        
+        // Add the view controller to the container.
+        addChild(viewController)
+        ratingview.addSubview(viewController.view)
 
+        
+        // Create and activate the constraints for the child’s view.
+//        onscreenConstraints = configureConstraintsForContainedView(containedView: viewController.view,
+//                                                                   stage: .onscreen)
+//        NSLayoutConstraint.activate(onscreenConstraints)
+        
+        // Notify the child view controller that the move is complete.
+        viewController.didMove(toParent: self)
+    }
+
+
+}
+
+extension UIViewController {
+    func setAdidasNavBar() {
+        self.navigationController!.navigationBar.barStyle = UIBarStyle.black
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        self.navigationController!.navigationBar.isTranslucent = false
+        let titleView = UIView(frame: CGRect(x:0, y:0, width:35, height:35))
+        let titleImageView = UIImageView(image: UIImage(named: "adidas-logo"))
+        titleImageView.frame = CGRect(x:0, y:0,width: titleView.frame.width, height: titleView.frame.height)
+        titleView.addSubview(titleImageView)
+        navigationItem.titleView = titleView
+    }
 }

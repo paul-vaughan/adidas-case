@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE03A24C267A97FB00FBDE52 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03A24B267A97FB00FBDE52 /* ReviewService.swift */; };
+		EE03A24E267A99E700FBDE52 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03A24D267A99E700FBDE52 /* ReviewViewModel.swift */; };
+		EE03A250267A9D4400FBDE52 /* ProductReviewsViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03A24F267A9D4400FBDE52 /* ProductReviewsViewModelType.swift */; };
+		EE03A253267A9F7400FBDE52 /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03A251267A9F7400FBDE52 /* ReviewsViewController.swift */; };
+		EE03A254267A9F7400FBDE52 /* ReviewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE03A252267A9F7400FBDE52 /* ReviewsViewController.xib */; };
+		EE03A258267AA37800FBDE52 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03A256267AA37800FBDE52 /* ReviewTableViewCell.swift */; };
+		EE03A259267AA37800FBDE52 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE03A257267AA37800FBDE52 /* ReviewTableViewCell.xib */; };
+		EE03A25C267AC9A600FBDE52 /* AddReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03A25B267AC9A600FBDE52 /* AddReviewView.swift */; };
 		EE10FEAC267A44B900F3AFC4 /* UIViewController+AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10FEAB267A44B900F3AFC4 /* UIViewController+AddChild.swift */; };
 		EE3416C8267A2119006E2FBE /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3416C7267A2119006E2FBE /* AlertViewModel.swift */; };
 		EE4F4BC8267A25A600595763 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4F4BC6267A25A600595763 /* AlertViewController.swift */; };
@@ -47,7 +55,7 @@
 		EEF28917267967EF00513A4D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28916267967EF00513A4D /* NetworkService.swift */; };
 		EEF289192679682700513A4D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF289182679682700513A4D /* Resource.swift */; };
 		EEF2891B2679686800513A4D /* NetworkServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2891A2679686800513A4D /* NetworkServiceType.swift */; };
-		EEF2891F2679E8D900513A4D /* ProductReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2891E2679E8D900513A4D /* ProductReviewViewModel.swift */; };
+		EEF2891F2679E8D900513A4D /* ProductReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2891E2679E8D900513A4D /* ProductReviewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +76,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE03A24B267A97FB00FBDE52 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		EE03A24D267A99E700FBDE52 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
+		EE03A24F267A9D4400FBDE52 /* ProductReviewsViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewsViewModelType.swift; sourceTree = "<group>"; };
+		EE03A251267A9F7400FBDE52 /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
+		EE03A252267A9F7400FBDE52 /* ReviewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsViewController.xib; sourceTree = "<group>"; };
+		EE03A256267AA37800FBDE52 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		EE03A257267AA37800FBDE52 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		EE03A25B267AC9A600FBDE52 /* AddReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewView.swift; sourceTree = "<group>"; };
 		EE10FEAB267A44B900F3AFC4 /* UIViewController+AddChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddChild.swift"; sourceTree = "<group>"; };
 		EE3416C7267A2119006E2FBE /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 		EE4F4BC6267A25A600595763 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +126,7 @@
 		EEF28916267967EF00513A4D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		EEF289182679682700513A4D /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		EEF2891A2679686800513A4D /* NetworkServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceType.swift; sourceTree = "<group>"; };
-		EEF2891E2679E8D900513A4D /* ProductReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewViewModel.swift; sourceTree = "<group>"; };
+		EEF2891E2679E8D900513A4D /* ProductReviewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +154,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE03A255267AA30100FBDE52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EE03A256267AA37800FBDE52 /* ReviewTableViewCell.swift */,
+				EE03A257267AA37800FBDE52 /* ReviewTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EE03A25A267AC98900FBDE52 /* AddReview */ = {
+			isa = PBXGroup;
+			children = (
+				EE03A25B267AC9A600FBDE52 /* AddReviewView.swift */,
+			);
+			path = AddReview;
+			sourceTree = "<group>";
+		};
 		EE3416C5267A20E7006E2FBE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,7 +263,6 @@
 			children = (
 				EEF288D326769D4300513A4D /* Product.swift */,
 				EEF288D726769E3200513A4D /* Review.swift */,
-				EEF2890D26795C6000513A4D /* ProductSearchModelType.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -243,6 +275,7 @@
 				EEF28916267967EF00513A4D /* NetworkService.swift */,
 				EEF289182679682700513A4D /* Resource.swift */,
 				EEF2891A2679686800513A4D /* NetworkServiceType.swift */,
+				EE03A24B267A97FB00FBDE52 /* ReviewService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -250,6 +283,7 @@
 		EEF288DE2676A1F600513A4D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EE03A24D267A99E700FBDE52 /* ReviewViewModel.swift */,
 				EEF288F22676B54B00513A4D /* ProductViewModel.swift */,
 			);
 			path = ViewModel;
@@ -308,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				EEF288E12676AF9900513A4D /* Cells */,
+				EEF2890D26795C6000513A4D /* ProductSearchModelType.swift */,
 				EEF28905267956A200513A4D /* ProductListViewController.swift */,
 				EEF28906267956A200513A4D /* ProductListViewController.xib */,
 				EEF288DF2676A21100513A4D /* ProductListViewModel.swift */,
@@ -318,7 +353,12 @@
 		EEF2891D2679E87F00513A4D /* ProductReview */ = {
 			isa = PBXGroup;
 			children = (
-				EEF2891E2679E8D900513A4D /* ProductReviewViewModel.swift */,
+				EE03A25A267AC98900FBDE52 /* AddReview */,
+				EE03A255267AA30100FBDE52 /* Cells */,
+				EEF2891E2679E8D900513A4D /* ProductReviewsViewModel.swift */,
+				EE03A24F267A9D4400FBDE52 /* ProductReviewsViewModelType.swift */,
+				EE03A251267A9F7400FBDE52 /* ReviewsViewController.swift */,
+				EE03A252267A9F7400FBDE52 /* ReviewsViewController.xib */,
 			);
 			path = ProductReview;
 			sourceTree = "<group>";
@@ -426,12 +466,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE03A259267AA37800FBDE52 /* ReviewTableViewCell.xib in Resources */,
 				EEF2890C267956BD00513A4D /* ProductDetailsViewController.xib in Resources */,
 				EEF288ED2676B16900513A4D /* ProductTableViewCell.xib in Resources */,
 				EEF28908267956A200513A4D /* ProductListViewController.xib in Resources */,
 				EEF288AD2676998900513A4D /* LaunchScreen.storyboard in Resources */,
 				EEF288AA2676998900513A4D /* Assets.xcassets in Resources */,
 				EEF288A82676998800513A4D /* Main.storyboard in Resources */,
+				EE03A254267A9F7400FBDE52 /* ReviewsViewController.xib in Resources */,
 				EEB06BD7267A4221002626D4 /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +503,9 @@
 				EEF28917267967EF00513A4D /* NetworkService.swift in Sources */,
 				EEF288F32676B54B00513A4D /* ProductViewModel.swift in Sources */,
 				EE10FEAC267A44B900F3AFC4 /* UIViewController+AddChild.swift in Sources */,
+				EE03A24E267A99E700FBDE52 /* ReviewViewModel.swift in Sources */,
 				EEF2890E26795C6000513A4D /* ProductSearchModelType.swift in Sources */,
+				EE03A25C267AC9A600FBDE52 /* AddReviewView.swift in Sources */,
 				EEF2891026795DAE00513A4D /* Navigator.swift in Sources */,
 				EEF288E02676A21100513A4D /* ProductListViewModel.swift in Sources */,
 				EEF288E82676B03C00513A4D /* ReusableView.swift in Sources */,
@@ -471,16 +515,20 @@
 				EEF289152679635C00513A4D /* ProductDetailsViewModelType.swift in Sources */,
 				EEF2890B267956BD00513A4D /* ProductDetailsViewController.swift in Sources */,
 				EEF288D826769E3200513A4D /* Review.swift in Sources */,
+				EE03A24C267A97FB00FBDE52 /* ReviewService.swift in Sources */,
 				EEF288EF2676B4A700513A4D /* ImageLoaderService.swift in Sources */,
 				EEF288E62676B02E00513A4D /* NibProvidable.swift in Sources */,
+				EE03A250267A9D4400FBDE52 /* ProductReviewsViewModelType.swift in Sources */,
 				EEF2891226795FD300513A4D /* ProductDetailsViewModel.swift in Sources */,
-				EEF2891F2679E8D900513A4D /* ProductReviewViewModel.swift in Sources */,
+				EEF2891F2679E8D900513A4D /* ProductReviewsViewModel.swift in Sources */,
 				EE3416C8267A2119006E2FBE /* AlertViewModel.swift in Sources */,
 				EEF288FB26794A9100513A4D /* Coordinator.swift in Sources */,
 				EEF288F12676B50500513A4D /* ImageServiceLoadable.swift in Sources */,
 				EEF288D426769D4300513A4D /* Product.swift in Sources */,
 				EEF288A12676998800513A4D /* AppDelegate.swift in Sources */,
+				EE03A253267A9F7400FBDE52 /* ReviewsViewController.swift in Sources */,
 				EE4F4BC8267A25A600595763 /* AlertViewController.swift in Sources */,
+				EE03A258267AA37800FBDE52 /* ReviewTableViewCell.swift in Sources */,
 				EEF28907267956A200513A4D /* ProductListViewController.swift in Sources */,
 				EEF288A32676998800513A4D /* SceneDelegate.swift in Sources */,
 				EEF288DD26769F5100513A4D /* ProductService.swift in Sources */,
